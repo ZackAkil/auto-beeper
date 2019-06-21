@@ -13,7 +13,7 @@ config = videointelligence.types.SpeechTranscriptionConfig(
 video_context = videointelligence.types.VideoContext(
     speech_transcription_config=config)
 
-def find_swears(event, context):
+def transcribe(event, context):
     """Triggered by a change to a Cloud Storage bucket.
     Args:
          event (dict): Event payload.
